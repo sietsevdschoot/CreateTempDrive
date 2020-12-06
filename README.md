@@ -3,8 +3,8 @@ TempDrive
 ### A self cleaning tempdrive for all your not so important files.
 
 ### What is it?
-TempDrive creates a drive mapped to a folder somewhere on your harddrive.
-It will remove all files which exceed a retention period. Empty folders are cleaned up as well.
+TempDrive will create a drive mapped to a folder somewhere on your harddrive.
+It will remove all files which exceed a certain retention period on a daily basis. Empty folders are removed as well.
 
 ### Why do I need it?
 If you download temporary files, documents and apps on a regular basis.
@@ -14,6 +14,8 @@ Then this is for you.
 
 It enables you to just download files to lets say the T: drive, do what you need to do and then forget about it. 
 A specified period later, let's say two weeks, the files will be deleted from the tempdrive automatically.
+
+Navigating to this temp-drive is as simple as ```t:\```
 
 ### How do i set it up?
 
