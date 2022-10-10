@@ -30,7 +30,7 @@ Open Windows Powershell and paste the following command.
 ## Make sure Tempdrive is visible for root and non-root users
 
 
-Read the article describing in [PowershellMagazine](http://www.powershellmagazine.com/2015/04/08/user-account-control-and-admin-approval-mode-the-impact-on-powershell/):
+Read the article in [PowershellMagazine](http://www.powershellmagazine.com/2015/04/08/user-account-control-and-admin-approval-mode-the-impact-on-powershell/):
 
 
 
