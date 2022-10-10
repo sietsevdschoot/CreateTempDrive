@@ -26,3 +26,21 @@ Open Windows Powershell and paste the following command.
 ```PowerShell
 .\InstallTempDrive.ps1 -tempFolder c:\Temp\TempDrive -driveLetter 'T' -retention ([TimeSpan]::FromDays(14))  
 ````
+
+## Make sure Tempdrive is visible for root and non-root users
+
+
+Read the article describing in [PowershellMagazine](http://www.powershellmagazine.com/2015/04/08/user-account-control-and-admin-approval-mode-the-impact-on-powershell/):
+
+
+
+> The preferred workaround is to Enable Linked Connections registry setting. When this setting is enabled, drive mappings are mirrored between the filtered access token and full control token. Because the drive mappings are being mirrored, the drives that are mapped in a non-elevated console will be visible in an elevated console and vice-versa. A restart is usually required to make this registry setting active.
+
+The fix described in this article can be applied using the .reg file [here](https://github.com/sietsevdschoot/CreateTempDrive/blob/master/tools/EnableLinkedConnections.reg).
+
+```PowerShell
+.\tools\EnableLinkedConnections.reg
+````
+
+
+

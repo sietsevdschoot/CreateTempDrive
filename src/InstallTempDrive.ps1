@@ -12,8 +12,6 @@ $isElevated = ([WindowsPrincipal][WindowsIdentity]::GetCurrent()).IsInRole([Wind
 if ($isElevated -and !$elevatedForTaskScheduler) {
     Write-Host "Please start script non elevated" -ForegroundColor Red
     Exit
-
-    # http://www.powershellmagazine.com/2015/04/08/user-account-control-and-admin-approval-mode-the-impact-on-powershell/
 }
 
 if (!$elevatedForTaskScheduler) 
